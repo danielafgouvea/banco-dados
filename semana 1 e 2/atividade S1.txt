@@ -1,0 +1,14 @@
+Atividade em Grupo (até 5 alunos)
+
+Desafio: Criar Relacionamentos
+
+Escolham um dos temas:
+Escola
+Streaming (Netflix, Spotify etc.)
+Jogos Online
+Loja Virtual
+
+Tarefas do grupo:
+Criar 3 tabelas
+Identificar o tipo de relacionamento
+Desenhar o esquema (pode ser no caderno)

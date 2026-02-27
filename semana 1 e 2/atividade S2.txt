@@ -1,0 +1,12 @@
+Exercício 01
+Um berçário deseja informatizar suas operações. Quando um bebê nasce, algumas informações
+são armazenadas sobre ele, tais como: nome, data do nascimento, peso do nascimento, altura,
+a mãe deste bebê e o médico que fez seu parto. Para as mães, o berçário também deseja manter
+um controle, guardando informações como: nome, endereço, telefone e data de nascimento.
+Para os médicos, é importante saber: CRM, nome, telefone celular e especialidade.
+
+1. Grife as entidades que você identificar no texto acima.
+2. Liste as entidades que você grifou.
+3. Liste os relacionamentos entre as entidades
+1. Exemplo: Mãe bebê: relacionamento entre Mãe e Bebê.
+4. Crie o modelo Entidade Relacionamento.
