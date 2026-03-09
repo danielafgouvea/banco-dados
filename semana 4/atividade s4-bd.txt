@@ -1,0 +1,15 @@
+Exercício atividade Semana 4:
+
+Sistema de Biblioteca Escolar:
+| Livro | Autor | Editora | Cidade_Editora |
+
+Sabendo:
+
+Editora → Cidade_Editora
+Livro → Autor
+Livro → Editora
+
+Responda:
+✔ Identifiquem dependências
+✔ Apliquem 3FN
+✔ Verifiquem se está em BCNF
