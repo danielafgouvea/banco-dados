@@ -1,0 +1,49 @@
+🔥 1. DELETE (produto sem estoque)
+DELETE FROM produtos
+WHERE estoque = 0;
+
+
+🔗 2. JOIN (quem comprou o quê)
+SELECT a.nome AS aluno, p.nome AS produto, c.quantidade
+FROM compras c
+JOIN alunos a ON c.aluno_id = a.id
+JOIN produtos p ON c.produto_id = p.id;
+
+
+🔍 3. SUBQUERY (alunos que compraram mais de 1 item)
+SELECT nome
+FROM alunos
+WHERE id IN (
+    SELECT aluno_id
+    FROM compras
+    GROUP BY aluno_id
+    HAVING SUM(quantidade) > 1
+);
+
+
+🏗️ 4. VIEW
+CREATE VIEW compras_alunos AS
+SELECT a.nome AS aluno, p.nome AS produto, c.quantidade
+FROM compras c
+JOIN alunos a ON c.aluno_id = a.id
+JOIN produtos p ON c.produto_id = p.id;
+
+
+⚡ 5. ÍNDICE
+CREATE INDEX idx_nome_aluno
+ON alunos(nome);
+
+
+🔄 6. TRANSAÇÃO (simulação de compra)
+BEGIN;
+
+UPDATE produtos
+SET estoque = estoque - 1
+WHERE id = 1;
+
+INSERT INTO compras (aluno_id, produto_id, quantidade)
+VALUES (1, 1, 1);
+
+COMMIT;
+
+
