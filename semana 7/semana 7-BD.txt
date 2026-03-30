@@ -1,0 +1,53 @@
+Atividade Prática – Investigando um Banco de Dados (Supabase)
+
+Rodarem exatamente este código:
+
+CREATE TABLE alunos (
+id INT,
+nome VARCHAR(100),
+serie VARCHAR(10),
+email VARCHAR(100)
+);
+
+CREATE TABLE produtos (
+id INT,
+nome_produto VARCHAR(100),
+categoria VARCHAR(50),
+preco VARCHAR(10),
+estoque INT
+);
+
+CREATE TABLE compras (
+id INT,
+id_aluno INT,
+id_produto INT,
+quantidade INT,
+data_compra TEXT
+);
+
+INSERT INTO alunos VALUES
+(1,'Ana','3A','ana@email.com'),
+(2,'Lucas','3B','lucas@email.com');
+
+INSERT INTO produtos VALUES
+(1,'Coxinha','Salgado','6.50',20),
+(2,'Refrigerante','Bebida','5.00',30);
+
+INSERT INTO compras VALUES
+(1,1,2,2,'2026-03-10'),
+(2,2,1,1,'2026-03-11');
+
+
+
+
+Investigação
+Respondam:
+1️- Quais erros existem na estrutura das tabelas?
+Analise:
+alunos
+produtos
+compras
+
+2️- Qual campo deveria ser chave primária em cada tabela?
+
+3️- Qual campo está com tipo de dado incorreto?
