@@ -1,0 +1,36 @@
+1. Conceitos Fundamentais e Modelagem Conceitual
+
+Uma clínica deseja informatizar seu sistema. Atualmente, todos os dados de pacientes, médicos e consultas são anotados em papel.
+
+Explique:
+
+o que é modelagem de banco de dados e qual sua importância antes da implementação;
+o que são entidades, atributos e relacionamentos;
+e como essas informações poderiam ser representadas em um Modelo Entidade-Relacionamento (MER).
+
+2. Regras de Negócio e Cardinalidade
+
+Em um sistema escolar, temos as seguintes situações:
+
+Um aluno pode se matricular em vários cursos.
+Um curso pode ter vários alunos matriculados.
+Cada curso possui apenas um professor responsável.
+
+Explique:
+
+o que são regras de negócio e por que são importantes na modelagem;
+qual é a cardinalidade existente entre aluno e curso;
+e qual é a cardinalidade entre curso e professor, justificando sua resposta.
+
+3. Modelo Relacional e Normalização
+
+Uma empresa organizou seus dados em uma única tabela com as seguintes informações:
+Cliente, Telefone, Produto, Quantidade, Nome do Vendedor.
+
+Após algum tempo, começaram a ocorrer problemas como repetição de dados e inconsistências.
+
+Explique:
+
+por que armazenar tudo em uma única tabela pode gerar problemas;
+o que é normalização e qual seu objetivo;
+e como essa estrutura poderia ser organizada corretamente no modelo relacional.
