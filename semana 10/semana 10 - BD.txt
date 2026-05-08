@@ -1,0 +1,38 @@
+-- Limpar tabela caso já exista
+DROP TABLE IF EXISTS contas;
+
+-- Criar tabela
+CREATE TABLE contas (
+  id SERIAL PRIMARY KEY,
+  nome_cliente TEXT NOT NULL,
+  saldo NUMERIC CHECK (saldo >= 0)
+);
+
+-- Inserir dados iniciais
+INSERT INTO contas (nome_cliente, saldo) VALUES
+('Ana', 500),
+('Carlos', 300);
+
+-- Verificar estado inicial
+SELECT * FROM contas;
+
+-- =============================
+-- TRANSACAO COM ERRO (ACID)
+-- =============================
+
+BEGIN;
+
+-- Retira dinheiro da Ana
+UPDATE contas
+SET saldo = saldo - 200
+WHERE nome_cliente = 'Ana';
+
+-- Tenta retirar dinheiro demais do Carlos (vai gerar erro)
+UPDATE contas
+SET saldo = saldo - 500
+WHERE nome_cliente = 'Carlos';
+
+COMMIT;
+
+-- Verificar resultado
+SELECT * FROM contas;
