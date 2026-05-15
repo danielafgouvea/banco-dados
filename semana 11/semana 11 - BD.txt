@@ -1,0 +1,52 @@
+Passo 1 – Criar a tabela
+Abrir SQL Editor no Supabase e executar:
+CREATE TABLE produtos (
+id SERIAL PRIMARY KEY,
+nome TEXT,
+preco NUMERIC
+);
+
+Passo 2 – Inserir dados
+INSERT INTO produtos (nome, preco)
+VALUES
+('Teclado', 120),
+('Mouse', 80),
+('Monitor', 900);
+
+Passo 3 – Testar o UPSERT (MERGE)
+Execute:
+INSERT INTO produtos (id, nome, preco)
+VALUES (1, 'Teclado Gamer', 200)
+ON CONFLICT (id)
+DO UPDATE SET
+nome = EXCLUDED.nome,
+preco = EXCLUDED.preco;
+Depois execute:
+SELECT * FROM produtos;
+Observe que o produto id 1 foi atualizado.
+
+Passo 4 – Criar uma função
+CREATE OR REPLACE FUNCTION aplicar_desconto(preco NUMERIC)
+RETURNS NUMERIC
+LANGUAGE SQL
+AS $$
+SELECT preco * 0.9;
+$$;
+
+Passo 5 – Testar a função
+SELECT nome, preco, aplicar_desconto(preco) AS preco_com_desconto
+FROM produtos;
+
+Passo 6 – Exportar dados (simulação)
+Execute:
+SELECT * FROM produtos;
+Depois utilize no Supabase:
+Download CSV
+
+Registro da atividade (para entregar)
+Os alunos devem registrar:
+1️⃣ Print da criação da tabela
+2️⃣ Print da inserção dos dados
+3️⃣ Print do UPSERT funcionando
+4️⃣ Print da função criada
+5️⃣ Print do resultado da função aplicada
