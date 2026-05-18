@@ -1,0 +1,41 @@
+Atividade semana 12 de Banco de Dados
+
+Se o banco de dados fosse um caderno da escola, o que seria: responda se é DML ou DDL
+
+1️- Criar uma nova página
+2️- Escrever o nome de um aluno
+3️- Apagar uma página
+4️- Corrigir o nome de um aluno
+
+Parte 2 – Montando um banco de dados da turma
+
+Criem uma tabela chamada turma.
+
+CREATE TABLE turma (
+nome TEXT,
+idade INT,
+jogo_favorito TEXT
+);
+
+Depois inserir 3 colegas:
+
+INSERT INTO turma (nome, idade, jogo_favorito)
+VALUES ('Lucas', 8, 'Minecraft');
+
+INSERT INTO turma (nome, idade, jogo_favorito)
+VALUES ('Maria', 9, 'Roblox');
+
+INSERT INTO turma (nome, idade, jogo_favorito)
+VALUES ('João', 8, 'Free Fire');
+Parte 3 – Desafio
+
+Adicione uma coluna chamada cidade:
+
+ALTER TABLE turma
+ADD COLUMN cidade TEXT;
+
+Insera um novo aluno.
+
+Responda: 
+
+"O que acontece primeiro em um banco de dados: DDL ou DML? Por quê?"
