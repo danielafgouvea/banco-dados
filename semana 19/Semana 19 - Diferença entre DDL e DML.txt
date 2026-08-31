@@ -63,13 +63,13 @@ WHERE id = 2;
 
 Situação 1 – Tudo certo
 
-COMMIT;
+__________________________;
 
 A transferência é confirmada.
 
 Situação 2 – Encontramos um erro
 
-ROLLBACK;
+__________________________;
 
 As alterações da transação são desfeitas.
 
