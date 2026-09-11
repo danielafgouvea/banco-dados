@@ -1,0 +1,34 @@
+Atividade Semana 20 – Protegendo e mantendo um banco de dados
+
+Objetivo: compreender como backup, recuperação, monitoramento, segurança e alta disponibilidade ajudam a manter um banco de dados seguro e funcionando.
+
+Situação-problema
+
+Imagine que uma escola possui um sistema de banco de dados com informações de alunos, notas e frequência. Um dia, o computador que armazena o banco apresenta uma falha.
+
+Responda às questões:
+
+1. Backup e recuperação
+Por que é importante fazer backup do banco de dados?
+2. Monitoramento de performance
+O sistema começou a ficar muito lento.
+O que significa monitorar a performance do banco de dados e o que poderia ser verificado?
+
+3. Segurança
+Cite duas medidas de segurança que podem ser utilizadas para proteger o banco de dados contra acessos não autorizados.
+
+4. Alta disponibilidade
+O sistema da escola precisa continuar funcionando mesmo quando um servidor apresentar problemas.
+Como a alta disponibilidade pode ajudar nessa situação?
+
+5. Solução completa
+Imagine que você é responsável pelo banco de dados da escola. Monte uma pequena estratégia contendo:
+
+Backup: __________________________
+Recuperação: ______________________
+Monitoramento: ____________________
+Segurança: ________________________
+Alta disponibilidade: ______________
+Produto final
+
+O aluno deverá entregar as respostas em uma folha ou no caderno, explicando cada item em 2 ou 3 linhas.
